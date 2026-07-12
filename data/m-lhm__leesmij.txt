@@ -1,0 +1,46 @@
+Toelichting directorystructuur NHI-GWF v1.0.1 okt 2023
+------------------------------------------------------
+Auteurs: Royal HaskoningDHV Nederland B.V. en Sweco Nederland B.V.
+
+Zie de rapportage "Workflow NHI Grondwater" (RHDHV, Sweco, 2023) voor een uitgebreide beschrijving.
+Met het template voor de workflow kan als volgt een (deel)model worden gemaakt:
+0. Let op: de eerste keer moet de iMOD-software (versie 5.x) nog zelf worden gedownload via de site van Deltares via: http://oss.deltares.nl/web/imod/home
+   Plaats de volgende bestanden in de map EXE\iMOD: iMOD_V5_x.exe, *mpich2*.dll, lib*md.dll en netcdf.dll
+   Plaats de volgende bestanden in de map EXE\iMODFLOW: iMODFLOW_METASWAP[_SVNxxxx]_v5_x.exe, MODFLOW6_v6.x.0.exe en *mpich2*.dll en netcdf.dll
+   Plaats de volgende bestanden in de map EXE\iMOD_coupler: imodc.exe, *mpich2*.dll, libmf6.dll, MetaSWAP.dll en TRANSOL.dll.
+     N.b. bij een nieuwe release (versie 5.x) van iMOD kan de verwijzing naar de iMOD-versie aangepast worden in SETTINGS\SIF.Settings.iMOD.bat
+1. Start de gedownloade iMOD-software eenmalig op, om de gebruikersvoorwaarden te accepteren   
+2. Kopieer de batchfile "CopyClip ModelTemplate.bat" naar een eigen directory en hernoem deze zonodig.
+3. Pas de instellingen aan in deze batchfile zoals gewenst voor het (deel)model. Zie de commentaarregels boven de SET parameter regels voor een beschrijving.
+   Geef ten minste het correcte modelextent op.
+4. Start de batchfile. Deze zal de template bestanden naar de nieuwe directory kopieren en enkele aanpassingen doen
+5. Volg de instructies die in het consolevenster worden gegeven en ga naar de WORKIN-map via de link.
+6. Maak een clip van de BASISDATA voor het opgegeven extent van het (deel)model via de Runscripts batchfile 'Runscripts clip BASISDATA.bat'
+7. Start de gewenste workflow stappen via de Runscripts batchfile(s) 'Runscripts MODELREF1 WFii-jj.bat'
+
+Toelichting directorystructuur
+------------------------------
+- BASISDATA: basisdata bestanden (geen modelinvoer)
+- DBASE:     modelinvoer per deelmodelvariant (incrementeel), zie indeling onder.
+- EXE:       iMOD, iMODFLOW
+- IMFILES:   iMOD project IMF-bestanden gebruikt voor modelaanpassingen, analyse en controle
+- IMODBATCH: Niet gebruikt, automatisch aangemaakt door iMOD
+- LEGEND:    iMOD legenda's
+- RESULTS:   modelresultaten per deelmodelvariant, zie indeling onder
+- SETTINGS:  enkele iMOD-instellingen, bijv. voor dwarsprofiel weergave
+- SHAPES:    iMOD GIS-bestanden voor achtergrondweergave
+- TMP:       iMOD TMP-directory 
+- WORKIN:    scripts, hulpbestanden, logfiles en invoer voor modelaanpassingen, per deelmodelvariant
+- WORKOUT:   afgeleide data o.b.v. modelresultaten of resultaten van workflows die automatisch zijn gegenereerd
+
+Modelextent en andere instellingen
+----------------------------------
+- SETTINGS\SIF.Settings.Project.bat
+  Het modelextent, contactgegevens en in scripts gebruikte paden zijn in deze batchfile gedefinieerd. Deze batchfile wordt aangeroepen vanuit alle scripts voor verwijzing om naar extent en paden.
+- SETTINGS\SIF.Settings.iMOD.bat
+- SETTINGS\SIF.Settings.Maps.bat
+  Aanvullende SIF-instellingen die in scripts gebruikt kunnen worden, zoals: iMOD-versie, achtergrondlijnen voor plots, etc.
+- SETTINGS\SIF.Settings.iMODValidator.xml
+  Instellingen voor iMODValidator-tool zoals gebruikt in 'WF Create RUN-files'
+- WORKIN\*\00 Settings.bat
+  Algemene instellingen voor subworkflows

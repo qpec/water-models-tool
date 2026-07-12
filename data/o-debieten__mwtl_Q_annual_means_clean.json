@@ -1,0 +1,61 @@
+{
+  "source": "RWS WaterWebservices DDApi OphalenWaarnemingen (Grootheid Q, m3/s)",
+  "grootheid": "Q (Debiet)",
+  "unit": "m3/s",
+  "aggregation": "10-min raw -> daily means; annual = mean of daily means",
+  "note": "Full analysable daily-mean discharge at rijkswateren gauges. Background fetch extends stations/years over time.",
+  "stations": {
+    "Lobith": {
+      "years": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "annual_mean_m3s": {
+        "2000": 2521.9,
+        "2001": 2827.0,
+        "2002": 2972.7,
+        "2003": 1832.4,
+        "2004": 1943.3,
+        "2005": 1962.4,
+        "2006": 2162.4,
+        "2007": 2465.7,
+        "2008": 2215.9,
+        "2009": 1963.3,
+        "2010": 2279.9,
+        "2011": 1821.0,
+        "2012": 2245.9,
+        "2013": 2580.2,
+        "2014": 1963.7,
+        "2015": 1918.5,
+        "2016": 2296.8,
+        "2017": 1831.7,
+        "2018": 1957.8,
+        "2019": 1954.5,
+        "2020": 1870.7,
+        "2021": 2263.0
+      },
+      "overall_mean_m3s": 2175.0,
+      "n_days": 8015
+    }
+  }
+}

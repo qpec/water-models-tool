@@ -1,0 +1,25 @@
+q_slug,waterbody,parameter,year,conc_mean_mgL,n_conc_samples,q_annual_mean_m3s,q_source,load_tonnes_per_year
+lobith_rijn,Rhine (Lobith),Ntot,2020,3.0104,26,1870.7,daily2020,177713.1
+lobith_rijn,Rhine (Lobith),Ptot,2020,0.0694,26,1870.7,daily2020,4098.3
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1991,4.3704,50,193.3,monthly,26657.7
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1992,4.5372,50,234.5,monthly,33577.5
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1993,4.5788,102,257.4,monthly,37189.5
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1994,4.3453,98,292.7,monthly,40140.6
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1995,4.4502,90,355.6,monthly,49937.3
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1996,4.8762,106,170.5,monthly,26235.7
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1997,4.5312,96,199.4,monthly,28513.5
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1998,4.6454,104,305.5,monthly,44779.0
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,1999,4.116,104,324.5,monthly,42155.6
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,2000,4.1569,104,330.5,monthly,43351.7
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ntot,2020,3.6752,52,262.4,daily2020,30434.4
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1991,0.5388,50,193.3,monthly,3286.5
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1992,0.4176,50,234.5,monthly,3090.4
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1993,0.5576,100,257.4,monthly,4528.9
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1994,0.5398,90,292.7,monthly,4986.3
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1995,0.3294,90,355.6,monthly,3695.8
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1996,0.4664,106,170.5,monthly,2509.5
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1997,0.4614,102,199.4,monthly,2903.3
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1998,0.3819,104,305.5,monthly,3681.5
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,1999,0.3563,102,324.5,monthly,3649.0
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,2000,0.2987,104,330.5,monthly,3114.6
+sintpieter_maas,Meuse (Eijsden/Sint Pieter),Ptot,2020,0.1658,52,262.4,daily2020,1373.1
